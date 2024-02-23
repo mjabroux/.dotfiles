@@ -20,7 +20,7 @@ Local IP
 rm -rf
 ### g:
 git
-### reload
+### reload:
 source ~/.zshrc
 ### _:
 sudo
