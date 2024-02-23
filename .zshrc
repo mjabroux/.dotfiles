@@ -95,17 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# ALIASES Mikhael
-alias home='ssh -p 1022 sysadmin@192.168.0.100'
-alias homeout='ssh -p 1022 sysadmin@82.65.8.141'
-alias homeoutforward='ssh -p 1022 -D 1080 sysadmin@82.65.8.141 -q'
-alias jellyfintop="ssh -p 1022 -t sysadmin@192.168.0.100 'sudo /usr/bin/intel_gpu_top'"
-alias munkipkg="/Users/mikhaeljabroux/Code/Draft/munki-pkg/munkipkg"
-alias nads='launchctl print system | awk -F\t '\''/^[[:blank:]]services = {/,/}/ {if(/{|}/) next; if(/com.apple/) next; printf "%s %s\n", $3,$4}'\'' | sort -k3'
-alias user-nads='launchctl print gui/$(id -u) | awk -F\t '\''/^[[:blank:]]services = {/,/}/ {if(/{|}/) next; if(/com.apple/) next; printf "%s %s\n", $3,$4}'\'' | sort -k3'
+
 # Function Mikhael
 gifiphy() {
     # Requires ffmpeg and gifsicle. Can be installed from brew.
@@ -128,6 +118,4 @@ source .dotfiles/system/.aliasmacos
 source .dotfiles/system/.function
 source .dotfiles/system/.function_macos
 source .dotfiles/system/.function_network
-source .dotfiles/system/.function_text
 source .dotfiles/system/.n
-source .dotfiles/system/.prompt
