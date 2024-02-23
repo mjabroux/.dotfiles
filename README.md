@@ -36,7 +36,7 @@ Start screenscaver
 Shows weather in Terminal
 #### ```bundleid```
 Get Mac OS app bundleID (copied in clipboard)
-#### ```hostname2ip````
+#### ```hostname2ip```
 Gets IP from DNS name
 #### ```unshorten```
 Get full URL from shorten URL
