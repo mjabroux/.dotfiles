@@ -4,23 +4,39 @@
 
 ```curl -sL https://raw.githubusercontent.com/mjabroux/.dotfiles/main/conf-init.sh | bash```
 ##
-```source  ~/.zshrx```
+```source  ~/.zshrc```
 ### Useful included aliases:
-#### nads:
+#### ```nads```
 System Installed Mac OS X non Apple Launchagents
-#### user-nads:
+#### ```user-nads```
 User Installed Mac OS X non Apple Launchagents
-#### ram:
+#### ```displays```
+Shows displays config
+#### ```ram```
 Ram usage
-#### ip:
+#### ```cpu```
+Shows CPU arch
+#### ```ip```
 Public IP
-#### ipl:
+#### ```ipl```
 Local IP
-### rr:
+#### ```rr```
 rm -rf
-### g:
+#### ```g```
 git
-### reload:
+#### ```reload```
 source ~/.zshrc
-### _:
+#### ```_```
 sudo
+#### ```chrome```
+#### ```firefox```
+#### ```afk```
+Start screenscaver
+#### ```meteo```
+Shows weather in Terminal
+#### ```bundleid```
+Get Mac OS app bundleID (copied in clipboard)
+#### ```hostname2ip````
+Gets IP from DNS name
+#### ```unshorten```
+Get full URL from shorten URL
