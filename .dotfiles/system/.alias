@@ -46,3 +46,10 @@ alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([
 alias hosts="sudo $EDITOR /etc/hosts"
 alias quit="exit"
 alias week="date +%V"
+alias home='ssh -p 1022 sysadmin@192.168.0.100'
+alias homeout='ssh -p 1022 sysadmin@82.65.8.141'
+alias homeoutforward='ssh -p 1022 -D 1080 sysadmin@82.65.8.141 -q'
+alias jellyfintop="ssh -p 1022 -t sysadmin@192.168.0.100 'sudo /usr/bin/intel_gpu_top'"
+alias munkipkg="/Users/mikhaeljabroux/Code/Draft/munki-pkg/munkipkg"
+alias nads='launchctl print system | awk -F\t '\''/^[[:blank:]]services = {/,/}/ {if(/{|}/) next; if(/com.apple/) next; printf "%s %s\n", $3,$4}'\'' | sort -k3'
+alias user-nads='launchctl print gui/$(id -u) | awk -F\t '\''/^[[:blank:]]services = {/,/}/ {if(/{|}/) next; if(/com.apple/) next; printf "%s %s\n", $3,$4}'\'' | sort -k3'
