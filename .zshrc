@@ -95,14 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-
-# Function Mikhael
-gifiphy() {
-    # Requires ffmpeg and gifsicle. Can be installed from brew.
-    ffmpeg -i $1 -pix_fmt rgb8 -r 10 $2 && gifsicle -O3 $2 -o $2
-}
-
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/mikhaeljabroux/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mikhaeljabroux/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
