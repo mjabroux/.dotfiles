@@ -9,7 +9,6 @@ alias rr="rm -rf"
 
 alias rsync="rsync -vh"
 alias json="json -c"
-alias psgrep="psgrep -i"
 
 # List declared aliases, functions, paths
 
@@ -28,7 +27,7 @@ alias lt="ls -lhAtr $LS_COLORIZED"
 alias ld="ls -ld $LS_COLORIZED */"
 alias lp="stat '%a %n' *"
 
-unset LS_COLORIZED LS_TIMESTYLEISO LS_GROUPDIRSFIRST
+unset LS_COLORIZED
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -47,5 +46,3 @@ alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([
 alias hosts="sudo $EDITOR /etc/hosts"
 alias quit="exit"
 alias week="date +%V"
-alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
-alias grip="grip --browser --pass=$GITHUB_TOKEN"
