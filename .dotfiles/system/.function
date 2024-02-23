@@ -29,3 +29,8 @@ meteo() {
   LOCATION="${LOCATION// /%20}"
   curl -s "$LOCALE.wttr.in/${LOCATION:-}"
 }
+# Function Mikhael
+gifiphy() {
+    # Requires ffmpeg and gifsicle. Can be installed from brew.
+    ffmpeg -i $1 -pix_fmt rgb8 -r 10 $2 && gifsicle -O3 $2 -o $2
+}
