@@ -53,3 +53,4 @@ alias jellyfintop="ssh -p 1022 -t sysadmin@192.168.0.100 'sudo /usr/bin/intel_gp
 alias munkipkg="/Users/mikhaeljabroux/Code/Draft/munki-pkg/munkipkg"
 alias nads='launchctl print system | awk -F\t '\''/^[[:blank:]]services = {/,/}/ {if(/{|}/) next; if(/com.apple/) next; printf "%s %s\n", $3,$4}'\'' | sort -k3'
 alias user-nads='launchctl print gui/$(id -u) | awk -F\t '\''/^[[:blank:]]services = {/,/}/ {if(/{|}/) next; if(/com.apple/) next; printf "%s %s\n", $3,$4}'\'' | sort -k3'
+alias nvim='~/nvim-macos/bin/nvim'
