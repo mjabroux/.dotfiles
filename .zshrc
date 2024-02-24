@@ -105,9 +105,9 @@ export DEFAULT_USER=$USER
 # directory where you created the repo above.
 alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 ### Mikha Dotfiles ###
-source .dotfiles/system/.alias
-source .dotfiles/system/.aliasmacos
-source .dotfiles/system/.function
-source .dotfiles/system/.function_macos
-source .dotfiles/system/.function_network
-source .dotfiles/system/.n
+source ~/.dotfiles/system/.alias
+source ~/.dotfiles/system/.aliasmacos
+source ~/.dotfiles/system/.function
+source ~/.dotfiles/system/.function_macos
+source ~/.dotfiles/system/.function_network
+source ~/.dotfiles/system/.n
